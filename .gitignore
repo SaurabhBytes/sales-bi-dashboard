@@ -1,0 +1,10 @@
+target/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+application-local.properties
+*.mv.db
+*.trace.db
+.idea/

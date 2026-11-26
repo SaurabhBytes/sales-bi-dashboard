@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+<header>
+<h1>Sales Analytics Dashboard</h1>
+<p>Monitor your business performances</p>
+</header>
+
+
+<div class="filters">
+    <label for="regionFilter">Filter by Region:</label>
+    <select id="regionFilter">
+        <option value="All">All Regions</option>
+        <option value="North">North</option>
+        <option value="South">South</option>
+        <option value="East">East</option>
+        <option value="West">West</option>
+    </select>
+</div>
+
+
+
+<main>
+    <section class="summary-cards">
+        <div class="card">
+            <h3>Total Revenue</h3>
+            <p id="totalRevenue">Loading...</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Sales</h3>
+            <p id="totalSales">Loading...</p>
+        </div>
+
+        <div class="card">
+            <h3>Average Revenue Per Sale</h3>
+            <p id="averageRevenue">Loading...</p>
+        </div>
+
+        <div class="card">
+            <h3>Top Product by Revenue</h3>
+            <p id="topProduct">Loading...</p>
+        </div>
+    </section>
+
+
+    <section class="charts">
+
+        <div class="chart-card">
+            <h2>Revenue by Region</h2>
+            <canvas id="regionChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <h2>Monthly Revenue</h2>
+            <canvas id="monthlyChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <h2>Revenue by Product</h2>
+            <canvas id="productChart"></canvas>
+        </div>
+    </section>
+
+    <section class="insights">
+        <h2>Business Insights</h2>
+        <div id="insightsContainer">
+            Loading insights...
+        </div>
+    </section>
+
+
+  
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
